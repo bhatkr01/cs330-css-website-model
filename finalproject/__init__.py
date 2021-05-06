@@ -7,11 +7,11 @@ from flask_marshmallow import Marshmallow
 from flask_login import LoginManager
 db=SQLAlchemy()
 mm=Marshmallow()
-
+key1=os.environ.get("SECRET_KEY")
 def create_app():
     app=Flask(__name__)
 
-    app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
+    app.config['SECRET_KEY'] = key1
     this_dir = os.path.abspath(os.path.dirname(__file__))
     app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:////" + os.path.join(this_dir, "css_db.sqlite3")
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
