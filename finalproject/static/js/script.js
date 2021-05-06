@@ -4,7 +4,7 @@
 /* jshint node: true */
 'use strict';
 
-const BASE_URL ="http://bhatkr01.pythonanywhere.com/user";
+const BASE_URL ="https://bhatkr01.pythonanywhere.com/user";
 
 async function getData(){
     var dataList= await fetch(`${BASE_URL}`)
