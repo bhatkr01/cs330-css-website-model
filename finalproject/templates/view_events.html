@@ -13,9 +13,11 @@
       </thead>
       <tbody id="events_tbody">
           {% for event in events%}
+          <tr>
           <td scope="col">{{event.title}}</td>
           <td scope="col">{{event.event_date}}</td>
           <td scope="col">{{event.organizer}}</td>
+        </tr>
           {%endfor%}
       </tbody>
     </table>
