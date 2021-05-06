@@ -3,6 +3,8 @@ from flask_login import login_required, current_user
 from . import db
 from datetime import datetime
 from .models import User, Post, Events
+from finalproject import create_app
+app = create_app()
 
 main = Blueprint('main', __name__)
 
