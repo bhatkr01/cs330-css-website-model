@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+
+{% block title %}Create New Post{% endblock %}
+
+{% block body %}
+<div class="container">
+    {% if message %}
+    <h2>{{message}}</h2>
+    {%endif%}
+	<div class="row">
+	    
+	    <div class="col-md-8 col-md-offset-2">
+	        
+    		<h1>Add Event</h1>
+    		
+    		<form action="/addevent" method="POST">
+    		     
+    		    
+    		    <div class="form-group">
+    		        <label for="title">Title <span class="require">*</span></label>
+    		        <input type="text" class="form-control" name="title"  required/>
+
+                    <label for="event_date">Date <span class="require">*</span></label>
+    		        <input type="date" class="form-control" name="event_date"  required/>
+    		    </div>
+    		    
+    		    <div class="form-group">
+    		        <label for="organizer">Organizer</label>
+    		        <textarea class="form-control" name="organizer" ></textarea>
+    		    </div>
+    		    
+    		    <div class="form-group" id="submit_events">
+    		        <button type="submit" class="btn btn-primary">
+    		            Create
+    		        </button>
+    		        <button class="btn btn-secondary" type="button" onclick="window.location.href='{{ url_for( "main.viewevents" ) }}';">
+    		            View Events
+    		        </button>
+    		    </div>
+    		    
+    		</form>
+		</div>
+		
+	</div>
+
+</div>
+
+{% endblock %}
+
+
+

@@ -1,0 +1,3 @@
+FLASK_APP=finalproject
+FLASK_ENV=development
+SECRET_KEY=K2r9i0J

@@ -1,0 +1,93 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.post_container {
+  flex: 1;
+  overflow: auto;
+  margin:10px;
+}
+.navbar{
+  margin-bottom: 0px !important;
+}
+
+
+.navbar-inverse {
+  background-color: #1073ce !important;
+  color:white;
+}
+
+nav.navbar.navbar-inverse{
+
+    width: 100%;
+}
+
+
+
+.navbar-inverse .navbar-brand {
+  color: rgba(255, 255, 255, 0.8);
+}
+.navbar-inverse .navbar-nav>li>a {
+  color: rgba(255, 255, 255, 0.8);
+}
+div.alert.alert-danger {
+    width:450px;
+    margin:10vh auto;
+    margin-bottom: 0 !important;
+    border-radius:5px;
+
+}
+
+.loginsignup_form{
+    width:450px;
+    margin:10vh auto;
+    background-color:#1073ce;
+    box-shadow: 0 1px 3px rgba(46, 87, 141, 0.12), 0 1px 2px rgba(50, 87, 129, 0.24);
+    border-radius:5px;
+    min-height:23rem;
+}
+.login_form, .signup_form{
+  margin: 10px;
+}
+#forgot_pswd{
+  color:white;
+}
+
+.card {
+  background-color: #808080;
+  padding:5px;
+  margin-top: 20px;
+  color:white;
+  min-height: 20rem;
+}
+#student_data{
+  display:none;
+  margin-top: 10px;
+}
+
+#footer{
+  margin-top:20px;
+  position:static;
+  bottom:0;
+  background-color: #1073ce !important;
+  display:flex;
+  color:white;
+  width: 100%;
+  min-height: 50px;
+  justify-content: center;
+  padding:12px;
+}
+.post_container{
+  height:200px;
+}
+
+#submit_events{
+  display:flex;
+  justify-content: space-between;
+}
