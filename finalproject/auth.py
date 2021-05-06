@@ -61,4 +61,7 @@ def get_all_users():
         user_data['name']=user.name
         user_data['email']=user.email
         result.append(user_data)
-    return jsonify({'users': result})
+    data=jsonify({'users': result})
+    data.headers["Access-Control-Allow-Origin"]="*"
+    data.headers["content-Type"]="application/json"
+    return data
