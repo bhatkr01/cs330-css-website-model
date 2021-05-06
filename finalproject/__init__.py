@@ -5,7 +5,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow
 from flask_login import LoginManager
-
+import main, auth
 db=SQLAlchemy()
 mm=Marshmallow()
 
@@ -40,6 +40,3 @@ def create_app():
         return User.query.get(int(user_id))
 
     return app
-
-    if __name__ == '__main__':
-        app.run()
