@@ -1,4 +1,5 @@
-from . import main
+from finalproject import create_app
   
 if __name__ == "__main__":
-        main.run()
+        app=create_all()
+        app.run()
