@@ -40,3 +40,6 @@ def create_app():
         return User.query.get(int(user_id))
 
     return app
+
+    if __name__ == '__main__':
+        app.run()
