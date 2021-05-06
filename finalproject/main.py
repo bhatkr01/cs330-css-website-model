@@ -1,6 +1,6 @@
 from flask import Flask, Blueprint, render_template, request, redirect, url_for
 from flask_login import login_required, current_user
-from . import db
+from finalproject import db
 from datetime import datetime
 from .models import User, Post, Events
 from finalproject import create_app
